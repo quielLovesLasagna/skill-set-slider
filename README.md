@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: []()
+- Live Site URL: [https://quiel-skill-set-slider.netlify.app/](https://quiel-skill-set-slider.netlify.app/)
 
 ## My process
 
