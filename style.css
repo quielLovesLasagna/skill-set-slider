@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+
+:root {
+	--cl-redish: #e45252;
+	--cl-greyish-1: #3d3a39;
+	--cl-greyish-2: #c2bbbb;
+	--cl-greyish-3: #555;
+	--cl-white: #fff;
+
+	--ff-poppins: "Poppins", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	min-height: 100vh;
+	display: grid;
+	place-items: center;
+	background-color: var(--cl-greyish-1);
+	font-family: var(--ff-poppins);
+}
+
+/* HEADING */
+.primary-heading {
+	font-size: 8rem;
+	color: var(--cl-redish);
+	font-weight: 600;
+	text-shadow: 0 0 0.3rem var(--cl-white);
+}
+
+/* SLIDESHOW */
+.slideshow {
+	width: 120rem;
+	height: 35rem;
+	border-radius: 0.5rem;
+	overflow: hidden;
+	position: relative;
+}
+
+/* SLIDER */
+.slider {
+	height: 300%;
+	background-color: var(--cl-greyish-2);
+	position: relative;
+	top: 0;
+	transition: top 0.4s;
+}
+
+/* SLIDE */
+.slide {
+	height: 35rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+/* BOX */
+.box {
+	height: 30rem;
+	aspect-ratio: 1;
+	border-radius: 0.3rem;
+	display: grid;
+	place-items: center;
+	background-color: var(--cl-greyish-1);
+	text-shadow: 0 0 0.3rem var(--cl-greyish-3);
+}
+
+.box i {
+	font-size: 15rem;
+	color: var(--cl-redish);
+	text-shadow: 0 0 0.2rem var(--cl-white);
+}
+
+/* CONTROLS */
+.controls {
+	width: 0.2rem;
+	height: 15rem;
+	background-color: var(--cl-greyish-1);
+	position: absolute;
+	top: calc(50% - 7.5rem);
+	right: 2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.control {
+	width: 2.5rem;
+	aspect-ratio: 1;
+	border: 0.2rem solid var(--cl-greyish-1);
+	background-color: var(--cl-greyish-2);
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+/* CONTROL IF ACTIVE */
+.active.control {
+	background-color: var(--cl-redish);
+	transition: background-color 0.5s;
+}
